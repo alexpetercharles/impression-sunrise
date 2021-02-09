@@ -1,18 +1,22 @@
 {
-  "name": "Impression Sunrise",
+  "name": "impression-sunrise",
   "version": "0.0.1",
   "description": "ar impression sunrise",
   "author": "lexi",
-  "main": "src/main.js",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
   "devDependencies": {
-    
-      "parcel-bundler": "^1.12.4"
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.1"
   },
   "dependencies": {
-  
+    "@google/model-viewer": "^1.5.0"
+  },
+  "staticFiles": {
+    "staticPath": "assets",
+    "watcherGlob": "**"
   }
 }
